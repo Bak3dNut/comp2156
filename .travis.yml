@@ -6,7 +6,6 @@ deploy:
   strategy: git
   token: $github_token
   local_dir: build
-  edge: true
   on:
     branch: main
 
