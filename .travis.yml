@@ -3,6 +3,7 @@ node_js:
   - "stable"
 dist: focal
 deploy:
+  provider: pages
   strategy: git
   token: $github_token
   local_dir: build
