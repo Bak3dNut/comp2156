@@ -9,3 +9,6 @@ deploy:
   local_dir: build
   on:
     branch: main
+script:
+  - npm install
+  - npm run build
