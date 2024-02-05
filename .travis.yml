@@ -1,21 +1,11 @@
 language: node_js
 node_js:
   - "stable"
-dist: focal
-
-# Add before_script or install if you need specific setup commands, for example:
-# install:
-#   - npm install
-
-script:
-  - npm install  # This will install dependencies
-  - npm run build  # This should build your project and output to the `build` directory
-
+ dist: focal
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: $github_token  # Ensure you have this environment variable set in Travis CI
+  github_token: $github_token
   local_dir: build
   on:
     branch: main
-
